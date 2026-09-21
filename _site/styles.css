@@ -1,0 +1,158 @@
+/* css styles */
+
+/* navigation logo */
+
+.navbar-logo {
+  max-height: 100px;
+}
+
+/* font styles: font, size, style */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200..800;1,200..800&display=swap');
+
+title, .title {
+   font-family: 'Lato', sans-serif;
+   text-align: normal !important
+ }
+
+body, .body {
+   font-family: "Lato", serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1.1em;
+ }
+
+h1, .h1 {
+   font-size: 1.6em;
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+ }
+ 
+ h2, .h2 {
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+   font-size: 1.2em;
+ }
+
+h3, .h3 {
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+   font-size: 1em;
+ }
+
+.justify {
+  text-align: justify !important
+}
+
+.center {
+  text-align: center !important
+}
+
+.left {
+  text-align: left !important
+}
+
+a:link { 
+  font-weight: bold;
+}
+
+/*-- footer styles --*/
+
+.footer-container {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1.5em;
+  margin-top: 3em;
+}
+
+.footer-text h3, .h3 {
+  font-size: .875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-top: 0.3rem;
+  border-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0px;
+}
+
+.footer-text p, .p {
+  font-size: .8 rem;
+  font-weight: 400;
+}
+
+.footer-text p > a {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.footer-text p > a:hover {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.footer-block {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 2em; 
+  box-sizing: border-box;
+}
+
+/*-- navigation bar --*/
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.9em;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    border-bottom: 1.5px solid #565656 !important;
+    color: #565656;
+  }
+
+/*-- background styles --*/
+
+.hero-banner {
+  position: relative;
+  background-color: #c1e0e2;
+  display: flex;
+  justify-content: center;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.grey-background {
+  background-color: #fff6f6;
+}
+
+.blue-background {
+  background-color: #c1e0e2;
+}
+
+/*-- buttons --*/
+      
+.card-link {
+    background-color: #f1f1f1;
+    color: #565656;
+    border: 1px solid #565656;
+    border-color: #565656;
+    border-radius: 20px !important;
+    padding: 1px .5rem 1px .5rem !important;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 2px; 
+    display: inline-block;
+    text-decoration: none;  
+}
+
+.card-link:hover {
+  background-color: #A9A9A9;
+  color: #565656;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -23,3 +23,5 @@ Funding is provided as a one-time award to support specific projects rather than
 We welcome conversations with individuals, foundations, and organisations who share our commitment to evidence-based conservation and community-led environmental stewardship.
 
 <a href="enquiries.qmd" class="card-link h2"> **Get in touch** </a>
+
+.

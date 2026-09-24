@@ -6,4 +6,12 @@ Here are some info about us.
 
 # Dr Sarah Jamison-Todd
 
+![](WhatsApp%20Image%202026-09-11%20at%207.18.39%20PM.jpeg){fig-align="center" width="512"}
+
+Blurb about Sarah goes here.
+
 # Dr James Hansford
+
+![](James-Hansford.webp){fig-align="center"}
+
+Blurb about James goes here.

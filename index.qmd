@@ -1,5 +1,6 @@
 ---
 title: Community Conservation Award
+itle-block-banner: "hero image.jpg"
 ---
 
 The Community Conservation Award provides funding to support locally led conservation and restoration initiatives that deliver meaningful benefits for both people and nature.

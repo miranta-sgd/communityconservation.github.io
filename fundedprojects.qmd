@@ -4,8 +4,20 @@ title: "Previously Funded Projects"
 
 Here are the projects we have funded in the past.
 
-![A Lovely Image](pexels-molnartamasphotography-23508665.jpg){group="my-gallery"}
+::::: image-grid
+::: image-card
+<img src="hero image.jpg"/>
 
-![Another Lovely Image](pexels-pixabay-63650.jpg){group="my-gallery"}
+<h3>Madagascar project</h3>
 
-![The Last Lovely Image](pexels-regan-dsouza-1315522347-33738163.jpg){group="my-gallery"}
+<p>Description of this project and its impact goes here. We can add a link to some other page with more info e.g. a local article etc..</p>
+:::
+
+::: image-card
+<img src="hero image 2.jpg"/>
+
+<h3>The other project</h3>
+
+<p>Description of this project and its impact goes here. We can add a link to some other page with more info e.g. a local article etc.</p>
+:::
+:::::

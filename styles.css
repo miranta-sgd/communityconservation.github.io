@@ -1,9 +1,20 @@
 /* css styles */
 
+/* google form */
+
+.google-form {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  display: block;
+}
+
+
 /* navigation logo */
 
 .navbar-logo {
   max-height: 100px;
+  object-fit: contain;
 }
 
 /* font styles: font, size, style */
@@ -109,15 +120,22 @@ a:link {
     border-bottom: 1.5px solid #565656 !important;
     color: #565656;
   }
+  
+  
+.navbar .container-fluid {
+  display: flex;
+  justify-content: left; !important
+}
+
+.navbar-brand {
+  margin: 0 15px 0 0 !important;
+}
+
+.navbar-nav {
+  margin: 0 !important;
+}
 
 /*-- background styles --*/
-
-.hero-banner {
-  position: relative;
-  background-color: #c1e0e2;
-  display: flex;
-  justify-content: center;
-}
 
 .white-background {
   background-color: white;
@@ -130,6 +148,111 @@ a:link {
 .blue-background {
   background-color: #c1e0e2;
 }
+
+/*-- hero image styles --*/
+.hero-slideshow {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100vw;
+  height: 250px;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.hero-text h1 , .h1 {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/*-- image styles --*/
+
+image-container {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  transition: transform 0.5s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.08);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*-- card styles --*/
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+.image-card {
+  min-width: 0;
+}
+
+.image-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.image-card img:hover {
+  transform: scale(1.05);
+}
+
+.image-card h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.image-card p {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /*-- buttons --*/
       

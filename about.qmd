@@ -4,14 +4,20 @@ title: "About us"
 
 Here are some info about us.
 
-# Dr Sarah Jamison-Todd
+::::: image-grid
+::: image-card
+<img src="sarah.jpeg"/>
 
-![](WhatsApp%20Image%202026-09-11%20at%207.18.39%20PM.jpeg){fig-align="center" width="512"}
+<h3>Dr Sarah Jamison-Todd</h3>
 
-Blurb about Sarah goes here.
+<p>Blurb about Sarah goes here.</p>
+:::
 
-# Dr James Hansford
+::: image-card
+<img src="james.webp"/>
 
-![](James-Hansford.webp){fig-align="center"}
+<h3>Dr James Hansford</h3>
 
-Blurb about James goes here.
+<p>Blurb about James goes here.</p>
+:::
+:::::

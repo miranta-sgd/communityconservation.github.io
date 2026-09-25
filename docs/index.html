@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Community Conservation Award</title>
+<title>The Community Conservation Award</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./logo-300ppi.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -72,33 +73,28 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background-image: url(hero image.jpg);
-background-size: cover;
-      }
-</style>
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Community Conservation Award">
+<meta property="og:title" content="The Community Conservation Award">
 <meta property="og:description" content="">
-<meta property="og:site_name" content="Community Conservation Award">
-<meta name="twitter:title" content="Community Conservation Award">
+<meta property="og:image" content="hero image.jpg">
+<meta name="twitter:title" content="The Community Conservation Award">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="hero image.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Community Conservation Award</span>
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./logo-300ppi.png" alt="Community Conservation Award logo" class="navbar-logo light-content">
+    <img src="./logo-300ppi.png" alt="Community Conservation Award logo" class="navbar-logo dark-content">
     </a>
   </div>
           <ul class="navbar-nav navbar-nav-scroll me-auto">
@@ -121,35 +117,45 @@ background-size: cover;
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Community Conservation Award</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Community Conservation Award</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<div class="hero-slideshow">
+<p><img src="hero image.jpg" class="hero-slide active"> <img src="hero image 2.jpg" class="hero-slide"></p>
+</div>
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".hero-slide");
+
+  setInterval(() => {
+    slides[slideIndex].classList.remove("active");
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].classList.add("active");
+  }, 5000);
+</script>
 <p>The Community Conservation Award provides funding to support locally led conservation and restoration initiatives that deliver meaningful benefits for both people and nature.</p>
 <p>We support evidence-based projects with clearly defined objectives and measurable outcomes over a one- to two-year period. The award is particularly suited to initiatives that translate conservation research into practical impact, pilot new approaches, or provide start-up funding to achieve lasting change.</p>
 <p>We are especially interested in projects that:</p>

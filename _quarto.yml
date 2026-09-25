@@ -12,10 +12,8 @@ lightbox:
 website:
   #site-url: add domain once we have it
   #repo-url: I assume we will need to host it on github or similar
-  #image: add logo image once we have it
-  #favicon: add favicon once we have it
-  title: "Community Conservation Award" #might not need this line
-  
+  image: 'logo-300ppi.png'
+  favicon: 'logo-300ppi.png'
   open-graph: true #internet protocol that uses special meta tags in a webpage's HTML to control how a link looks when shared on social media and messaging apps
   
   twitter-card: true #a snippet of rich preview information that automatically appears when a website URL is shared in a post on X
@@ -25,6 +23,8 @@ website:
     search: false
     pinned: true
     collapse: false
+    logo: logo-300ppi.png
+    logo-alt: "Community Conservation Award logo"
     left:
       - href: about.qmd
         text: About Us
@@ -32,8 +32,6 @@ website:
         text: Previously Funded Projects
       - href: enquiries.qmd
         text: Enquiries
-  
-      
   
   page-footer: 
     background: "#f1f1f1"

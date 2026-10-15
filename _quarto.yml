@@ -7,13 +7,13 @@ lightbox:
   effect: fade
   desc-position: right
   loop: true
-  
+
 
 website:
   #site-url: add domain once we have it
   #repo-url: I assume we will need to host it on github or similar
-  image: 'logo-300ppi.png'
-  favicon: 'logo-300ppi.png'
+  image: 'images/logo-full-300ppi.png'
+  favicon: 'images/logo-icon-300ppi.png'
   open-graph: true #internet protocol that uses special meta tags in a webpage's HTML to control how a link looks when shared on social media and messaging apps
   
   twitter-card: true #a snippet of rich preview information that automatically appears when a website URL is shared in a post on X
@@ -22,8 +22,8 @@ website:
     background: "#f1f1f1"
     search: false
     pinned: true
-    collapse: false
-    logo: logo-300ppi.png
+    collapse: true
+    logo: 'images/logo-full-300ppi.png'
     logo-alt: "Community Conservation Award logo"
     left:
       - href: about.qmd
@@ -32,6 +32,7 @@ website:
         text: Previously Funded Projects
       - href: enquiries.qmd
         text: Enquiries
+    tools: []
   
   page-footer: 
     background: "#f1f1f1"
@@ -52,6 +53,7 @@ format:
     theme:
       - cosmo #not sure about this one
       - brand
+    title-block: false
     css: styles.css
     toc: true
 

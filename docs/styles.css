@@ -1,5 +1,10 @@
 /* css styles */
 
+/* remove title from pages */
+.quarto-title-block {
+  display: none;
+}
+
 /* google form */
 
 .google-form {
@@ -9,13 +14,6 @@
   display: block;
 }
 
-
-/* navigation logo */
-
-.navbar-logo {
-  max-height: 100px;
-  object-fit: contain;
-}
 
 /* font styles: font, size, style */
 
@@ -109,22 +107,37 @@ a:link {
   box-sizing: border-box;
 }
 
-/*-- navigation bar --*/
 
+/* navigation logo */
+
+.navbar-logo {
+  max-height: 100px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/*-- navigation bar --*/
 .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
-    font-size: 0.9em;
-    font-family: 'Lato', sans-serif;
-    border: none;
-    border-bottom: 1.5px solid #565656 !important;
-    color: #565656;
-  }
-  
-  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.0em;
+  font-family: 'Lato', sans-serif;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
 .navbar .container-fluid {
-  display: flex;
-  justify-content: left; !important
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-brand {
@@ -133,7 +146,19 @@ a:link {
 
 .navbar-nav {
   margin: 0 !important;
+  gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+/* Let the hero image sit behind the navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 
 /*-- background styles --*/
 
@@ -154,10 +179,16 @@ a:link {
   position: relative;
   margin-bottom: 40px;
   width: 100vw;
-  height: 250px;
+  height: 600px;
   margin-left: calc(50% - 50vw);
   overflow: hidden;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-top: -450px;
 }
+
+
+
 
 .hero-slide {
   position: absolute;
@@ -166,29 +197,26 @@ a:link {
   object-fit: cover;
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .hero-slide.active {
   opacity: 1;
 }
 
-.hero-text h1 , .h1 {
-  font-family: 'Lato', sans-serif;
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
+
+/* Remove space between navbar and hero slideshow */
+#quarto-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-/*-- image styles --*/
-
-image-container {
-  overflow: hidden;
-  border-radius: 8px;
+main.content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
+
 
 .image-container img {
   width: 100%;

@@ -79,7 +79,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 1.0em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Mukta Mahee', sans-serif;
   border: none;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -161,6 +161,13 @@
   opacity: 1;
 }
 
+#quarto-header .quarto-color-scheme-toggle,
+#quarto-header button[aria-label*="color scheme"],
+#quarto-header button[aria-label*="theme"] {
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
 /* Remove space between navbar and hero slideshow */
 #quarto-content {
   padding-top: 0 !important;
@@ -240,40 +247,39 @@ main.content {
  /*-- LIGHT MODE --*/
 
 .quarto-light .navbar {
-  background-color: #ffffff !important;
+  background-color: #d7c8a7 !important;
 }
 
 .quarto-light .white-background {
-  background-color: #ffffff;
+  background-color: #f5efe3;
 }
 
 .quarto-light .grey-background {
-  background-color: #grey;
+  background-color: #f5efe3;
 }
 
 .quarto-light .blue-background {
-  background-color: #blue;
+  background-color: #f5efe3;
 }
 
 .quarto-light a {
-  color: #8fcbd0;
+  color: #842727;
 }
 
 .quarto-light .navbar .nav-item .nav-link.active,
 .navbar .nav-item .nav-link:active {
-  color: #268bd2 !important; /* Replace with your desired hex colour */
+  color: #842727 !important; /* Replace with your desired hex colour */
 }
 
 /* 2. Optional: Color when you hover over a navbar item */
 .quarto-light .navbar .nav-item .nav-link:hover {
-  color: #268bd2 !important; 
+  color: #842727 !important; 
 }
 
  /* buttons - light mode */
 .quarto-light .card-link {
-    background-color: #f1f1f1;
-    color: #565656;
-    border: 1px solid #565656;
+    background-color: #d7c8a7;
+    color: #565656
     border-radius: 20px;
     padding: 1px .5rem;
     margin-bottom: 0.5rem;
@@ -284,24 +290,35 @@ main.content {
 }
 
 .quarto-light .card-link:hover {
-    background-color: #A9A9A9;
-    color: #565656;
+    background-color: #d7c8a7;
+    color: #2e1715;
 }
 
 /* Light mode navbar */
 .quarto-light .navbar {
-  background-color: rgba(241, 241, 241, 0.92) !important;
-  color: #222222;
+  background-color:rgb(231, 203, 169, 0.7) !important;
+  color: #2e1715;
 }
 
 /* Navbar links in light mode */
 .quarto-light .navbar a {
-  color: #222222;
+  color: #2e1715;
 }
 
 /* Light mode: use the original logo */
 .quarto-light .navbar-brand img {
   content: url("images/logo-full-300ppi.png");
+}
+
+/* Overall page background — light mode */
+.quarto-light body {
+  background-color: #f5efe3 !important;
+}
+
+
+.quarto-light #quarto-content,
+.quarto-light main.content {
+  background-color: #f5efe3 !important; 
 }
 
 
@@ -341,9 +358,8 @@ main.content {
 
 /* buttons - dark mode */
 .quarto-dark .card-link {
-    background-color: #303030;
-    color: #f1f1f1;
-    border: 1px solid #c1e0e2;
+    background-color: #2e1715;
+    color: #f5efe3;
     border-radius: 20px;
     padding: 1px .5rem;
     margin-bottom: 0.5rem;
@@ -354,19 +370,19 @@ main.content {
 }
 
 .quarto-dark .card-link:hover {
-    background-color: #454545;
-    color: #ffffff;
+    background-color: #302221;
+    color: #f5efe3;
 }
 
 /* Dark mode navbar */
 .quarto-dark .navbar {
-  background-color: rgba(35, 35, 35, 0.92) !important;
-  color: #ffffff;
+  background-color: rgb(0, 0, 0, 0.75) !important;
+  color: #f5efe3;
 }
 
 /* Navbar links in dark mode */
 .quarto-dark .navbar a {
-  color: #ffffff;
+  color: #f5efe3;
 }
 
 /* Dark mode: use the white logo */
@@ -374,19 +390,28 @@ main.content {
   content: url("images/logo-white-300ppi.png");
 }
 
+/* Overall page background — dark mode */
+.quarto-dark body {
+  background-color: #1d1514 !important;
+}
 
+.quarto-dark #quarto-content,
+.quarto-dark main.content {
+  background-color: #1d1514 !important;
+}
 
 /* font styles: font, size, style */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200..800;1,200..800&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200..800;1,200..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
 
 title, .title {
-   font-family: 'Lato', sans-serif !important;
+   font-family: 'Mukta Mahee', sans-serif !important;
    text-align: normal !important
  }
 
 body, .body {
-   font-family: "Lato", sans-serif !important;
+   font-family: "Mukta Mahee", sans-serif !important;
    font-weight: 400;
    font-style: normal;
    font-size: 1.1em;
@@ -394,18 +419,18 @@ body, .body {
 
 h1, .h1 {
    font-size: 1.6em;
-   font-family: 'Lato', sans-serif !important;
+   font-family: 'Mukta Mahee', sans-serif !important;
    font-weight: bold;
  }
  
  h2, .h2 {
-   font-family: 'Lato', sans-serif !important;
+   font-family: 'Mukta Mahee', sans-serif !important;
    font-weight: bold;
    font-size: 1.2em;
  }
 
 h3, .h3 {
-   font-family: 'Lato', sans-serif !important;
+   font-family: 'Mukta Mahee', sans-serif !important;
    font-weight: bold;
    font-size: 1em;
  }
@@ -429,7 +454,7 @@ a:link {
 
 /* 2. Override the darkly theme font variables */
 :root {
-  --bs-body-font-family: "Lato", system-ui, -apple-system, sans-serif !important;
+  --bs-body-font-family: "Mukta Mahee", system-ui, -apple-system, sans-serif !important;
 }
 
 html {

@@ -1,7 +1,5 @@
 ---
-title: The Community Conservation Award
-open-graph: true
-twitter-card: true
+title: "Home"
 toc: false
 page-layout: full
 ---

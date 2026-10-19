@@ -19,55 +19,6 @@
   box-sizing: border-box;
 }
 
-/* font styles: font, size, style */
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200..800;1,200..800&display=swap');
-
-title, .title {
-   font-family: 'Lato', sans-serif;
-   text-align: normal !important
- }
-
-body, .body {
-   font-family: "Lato", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   font-size: 1.1em;
- }
-
-h1, .h1 {
-   font-size: 1.6em;
-   font-family: 'Lato', sans-serif;
-   font-weight: bold;
- }
- 
- h2, .h2 {
-   font-family: 'Lato', sans-serif;
-   font-weight: bold;
-   font-size: 1.2em;
- }
-
-h3, .h3 {
-   font-family: 'Lato', sans-serif;
-   font-weight: bold;
-   font-size: 1em;
- }
-
-.justify {
-  text-align: justify !important
-}
-
-.center {
-  text-align: center !important
-}
-
-.left {
-  text-align: left !important
-}
-
-a:link { 
-  font-weight: bold;
-}
 
 /*-- footer styles --*/
 
@@ -130,7 +81,6 @@ a:link {
   font-size: 1.0em;
   font-family: 'Lato', sans-serif;
   border: none;
-  background-color: rgba(255, 255, 255, 0.85) !important;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 1000;
@@ -189,6 +139,25 @@ a:link {
 }
 
 .hero-slide.active {
+  opacity: 1;
+}
+.hero-credit {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  z-index: 10;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 4px;
+
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  pointer-events: none;
+}
+
+.hero-credit.active {
   opacity: 1;
 }
 
@@ -290,6 +259,16 @@ main.content {
   color: #8fcbd0;
 }
 
+.quarto-light .navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:active {
+  color: #268bd2 !important; /* Replace with your desired hex colour */
+}
+
+/* 2. Optional: Color when you hover over a navbar item */
+.quarto-light .navbar .nav-item .nav-link:hover {
+  color: #268bd2 !important; 
+}
+
  /* buttons - light mode */
 .quarto-light .card-link {
     background-color: #f1f1f1;
@@ -348,6 +327,18 @@ main.content {
   color: #8fcbd0;
 }
 
+
+.quarto-dark .navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:active {
+  color: #268bd2 !important; /* Replace with your desired hex colour */
+}
+
+/* 2. Optional: Color when you hover over a navbar item */
+.quarto-dark .navbar .nav-item .nav-link:hover {
+  color: #268bd2 !important; 
+}
+
+
 /* buttons - dark mode */
 .quarto-dark .card-link {
     background-color: #303030;
@@ -383,6 +374,63 @@ main.content {
   content: url("images/logo-white-300ppi.png");
 }
 
+
+
+/* font styles: font, size, style */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,200..800;1,200..800&display=swap');
+
+title, .title {
+   font-family: 'Lato', sans-serif !important;
+   text-align: normal !important
+ }
+
+body, .body {
+   font-family: "Lato", sans-serif !important;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1.1em;
+ }
+
+h1, .h1 {
+   font-size: 1.6em;
+   font-family: 'Lato', sans-serif !important;
+   font-weight: bold;
+ }
+ 
+ h2, .h2 {
+   font-family: 'Lato', sans-serif !important;
+   font-weight: bold;
+   font-size: 1.2em;
+ }
+
+h3, .h3 {
+   font-family: 'Lato', sans-serif !important;
+   font-weight: bold;
+   font-size: 1em;
+ }
+
+.justify {
+  text-align: justify !important
+}
+
+.center {
+  text-align: center !important
+}
+
+.left {
+  text-align: left !important
+}
+
+a:link { 
+  font-weight: bold;
+}
+
+
+/* 2. Override the darkly theme font variables */
+:root {
+  --bs-body-font-family: "Lato", system-ui, -apple-system, sans-serif !important;
+}
 
 html {
   scroll-behavior: smooth;

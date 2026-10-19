@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-db89b455e1677a420b1eb07d66e39bb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-73b6d810688412a741ae4a03d8c314cd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-aa9539727dd173adb2603436b414fa68.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-db89b455e1677a420b1eb07d66e39bb9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-73b6d810688412a741ae4a03d8c314cd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -269,6 +269,10 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About Us</span></a>
   </li>  
@@ -317,17 +321,67 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="hero-slideshow">
-<p><img src="images/humans nature/01 MBC team shows BSF larvae to farmers (Nov 2024).jpg" class="hero-slide active"> <img src="images/humans nature/08 Working frass into the soil, Tahiana farm (Dec 2025).jpg" class="hero-slide"> <img src="images/humans nature/10 BSF fly cage over pond (Apr 2025).jpg" class="hero-slide"> <img src="images/humans nature/11 Farmers with BSF products (Nov 2024).jpg" class="hero-slide"> <img src="images/humans nature/DSCN3267.jpg" class="hero-slide"> <img src="images/humans nature/Credit Ranjana Bhatta.jpg" class="hero-slide"> <img src="images/humans nature/Phoebe and Basanta credit Prakash Basnet.png" class="hero-slide"></p>
+<div class="hero-slideshow">
+<p><img src="images/humans nature/01 MBC team shows BSF larvae to farmers (Nov 2024).jpg" class="hero-slide active"> <img src="images/humans nature/08 Working frass into the soil, Tahiana farm (Dec 2025).jpg" class="hero-slide"> <img src="images/humans nature/10 BSF fly cage over pond (Apr 2025).jpg" class="hero-slide"> <img src="images/humans nature/11 Farmers with BSF products (Nov 2024).jpg" class="hero-slide"> <img src="images/humans nature/DSCN3267.jpg" class="hero-slide"> <img src="images/humans nature/Phoebe and Basanta credit Prakash Basnet.png" class="hero-slide"></p>
+<div class="hero-credit">
+
+</div>
+</div>
 </div>
 <script>
+document.addEventListener("DOMContentLoaded", () => {
   let slideIndex = 0;
-  const slides = document.querySelectorAll(".hero-slide");
+  const slides = Array.from(document.querySelectorAll(".hero-slide"));
+  const credit = document.querySelector(".hero-credit");
 
-  setInterval(() => {
-    slides[slideIndex].classList.remove("active");
-    slideIndex = (slideIndex + 1) % slides.length;
-    slides[slideIndex].classList.add("active");
-  }, 5000);
+  const credits = [
+    "Credit: BSF team",
+    "Credit: BSF team A",
+    "Credit: BSF teamB",
+    "Credit: BSF team C",
+    "Credit: ? (image DSCN3267)",
+    "Credit: Prakash Basnet"
+  ];
+
+  // Randomize image order
+  const order = slides.map((_, i) => i);
+
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+
+  function showSlide(position) {
+    const imageIndex = order[position];
+
+    // Change the image using your existing fade effect
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[imageIndex].classList.add("active");
+
+    // Fade the credit out first
+    credit.classList.remove("active");
+
+    // Wait for the credit's fade-out before changing its text
+    setTimeout(() => {
+      credit.textContent = credits[imageIndex];
+
+      // Allow the browser to apply opacity: 0 before fading in
+      void credit.offsetWidth;
+      credit.classList.add("active");
+    }, 1500);
+  }
+
+  // Show the first randomized slide
+  showSlide(slideIndex);
+
+  // Change slides every 5 seconds
+  if (slides.length > 1) {
+    setInterval(() => {
+      slideIndex = (slideIndex + 1) % slides.length;
+      showSlide(slideIndex);
+    }, 5000);
+  }
+});
 </script>
 <section id="enquiries" class="level1">
 <h1>Enquiries</h1>
@@ -443,6 +497,11 @@ Loading…
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -763,7 +822,7 @@ Loading…
 <p>2026 All rights reserved.</p>
 </div>   
     <div class="nav-footer-center">
-<p>Website created by Science Graphic Design in Quarto.</p>
+<p>Website created by <a href="https://www.sciencegraphicdesign.com/">Science Graphic Design</a> in Quarto.</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">

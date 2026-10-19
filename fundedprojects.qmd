@@ -5,7 +5,7 @@ toc: false
 ---
 
 ::: hero-slideshow
-<img src="hero image.jpg" class="hero-slide active"/> <img src="hero image 2.jpg" class="hero-slide"/>
+<img src="images/humans nature/01 MBC team shows BSF larvae to farmers (Nov 2024).jpg" class="hero-slide active"/> <img src="images/humans nature/08 Working frass into the soil, Tahiana farm (Dec 2025).jpg" class="hero-slide"/> <img src="images/humans nature/10 BSF fly cage over pond (Apr 2025).jpg" class="hero-slide"/> <img src="images/humans nature/11 Farmers with BSF products (Nov 2024).jpg" class="hero-slide"/> <img src="images/humans nature/DSCN3267.jpg" class="hero-slide"/> <img src="images/humans nature/Credit Ranjana Bhatta.jpg" class="hero-slide"/> <img src="images/humans nature/Phoebe and Basanta credit Prakash Basnet.png" class="hero-slide"/>
 :::
 
 ```{=html}
@@ -23,22 +23,30 @@ toc: false
 
 # Previously funded projects
 
-Here are the projects we have funded in the past.
+We are so proud to have sponsored two projects so far:
 
 ::::: image-grid
 ::: image-card
-<img src="hero image.jpg"/>
+<img src="images/Madagascar farms/03 Dried BSF larvae at a small farm (Nov 2024).jpg"/>
 
-<h3>Madagascar project</h3>
+<h2>Black Soldier Fly microfarms in Madagascar</h2>
 
-<p>Description of this project and its impact goes here. We can add a link to some other page with more info e.g. a local article etc..</p>
+<p>This project developed research, guides and training for local farmers to use soldier fly farming (BSF) as a simple and low-cost way to turn waste and invasive plants into valuable resources like animal feed, organic fertilizer and nutritious food.</p>
+
+<p>**Project leader:** Dr Brian Fisher</p>
+
+<p>**Project website:** [Madagascar Bio](https://www.madagascarbio.org/bsf-farms.html)</p>
 :::
 
 ::: image-card
-<img src="hero image 2.jpg"/>
+<img src="images/croc/adult gharial holding.png"/>
 
-<h3>The other project</h3>
+<h2>Gharial conservation in Nepal</h2>
 
-<p>Description of this project and its impact goes here. We can add a link to some other page with more info e.g. a local article etc.</p>
+<p>The Himalayan Gharial Project is a conservation and research initiative dedicated to understanding why the gharials remain Critically Endangered in Nepal, and how to support their long-term recovery.</p>
+
+<p>**Project leader:** Dr Phoebe Griffith</p>
+
+<p>**Project website:** [Himalayan Nature](https://www.himalayannature.org/works/projects/himalayan-gharial-project/)</p>
 :::
 :::::

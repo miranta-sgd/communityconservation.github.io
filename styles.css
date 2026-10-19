@@ -5,15 +5,19 @@
   display: none;
 }
 
+
 /* google form */
 
 .google-form {
+  display: block;
   width: 100%;
   max-width: 100%;
+  height: 1000px;
   border: none;
-  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* font styles: font, size, style */
 
@@ -151,27 +155,13 @@ a:link {
   padding-bottom: 10px;
 }
 
+/* Hero image stuff */
 /* Let the hero image sit behind the navbar */
 .navbar {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-}
-
-
-/*-- background styles --*/
-
-.white-background {
-  background-color: white;
-}
-
-.grey-background {
-  background-color: #fff6f6;
-}
-
-.blue-background {
-  background-color: #c1e0e2;
 }
 
 /*-- hero image styles --*/
@@ -186,9 +176,6 @@ a:link {
   padding-top: 0 !important;
   margin-top: -450px;
 }
-
-
-
 
 .hero-slide {
   position: absolute;
@@ -205,7 +192,6 @@ a:link {
   opacity: 1;
 }
 
-
 /* Remove space between navbar and hero slideshow */
 #quarto-content {
   padding-top: 0 !important;
@@ -217,7 +203,7 @@ main.content {
   margin-top: 0 !important;
 }
 
-
+/* Images in two columns*/
 .image-container img {
   width: 100%;
   display: block;
@@ -239,7 +225,7 @@ main.content {
   }
 }
 
-/*-- card styles --*/
+/*-- card styles aka buttons --*/
 
 .image-grid {
   display: grid;
@@ -282,27 +268,121 @@ main.content {
 }
 
 
-/*-- buttons --*/
-      
-.card-link {
+ /*-- LIGHT MODE --*/
+
+.quarto-light .navbar {
+  background-color: #ffffff !important;
+}
+
+.quarto-light .white-background {
+  background-color: #ffffff;
+}
+
+.quarto-light .grey-background {
+  background-color: #grey;
+}
+
+.quarto-light .blue-background {
+  background-color: #blue;
+}
+
+.quarto-light a {
+  color: #8fcbd0;
+}
+
+ /* buttons - light mode */
+.quarto-light .card-link {
     background-color: #f1f1f1;
     color: #565656;
     border: 1px solid #565656;
-    border-color: #565656;
-    border-radius: 20px !important;
-    padding: 1px .5rem 1px .5rem !important;
+    border-radius: 20px;
+    padding: 1px .5rem;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    border-radius: 2px; 
     display: inline-block;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
-.card-link:hover {
-  background-color: #A9A9A9;
-  color: #565656;
+.quarto-light .card-link:hover {
+    background-color: #A9A9A9;
+    color: #565656;
 }
+
+/* Light mode navbar */
+.quarto-light .navbar {
+  background-color: rgba(241, 241, 241, 0.92) !important;
+  color: #222222;
+}
+
+/* Navbar links in light mode */
+.quarto-light .navbar a {
+  color: #222222;
+}
+
+/* Light mode: use the original logo */
+.quarto-light .navbar-brand img {
+  content: url("images/logo-full-300ppi.png");
+}
+
+
+ /*-- DARK MODE --*/
+
+.quarto-dark .navbar {
+  background-color: rgba(30, 30, 30, 0.88) !important;
+}
+
+.quarto-dark .white-background {
+  background-color: #222222;
+}
+
+.quarto-dark .grey-background {
+  background-color: #2b2b2b;
+}
+
+.quarto-dark .blue-background {
+  background-color: #243638;
+}
+
+.quarto-dark a {
+  color: #8fcbd0;
+}
+
+/* buttons - dark mode */
+.quarto-dark .card-link {
+    background-color: #303030;
+    color: #f1f1f1;
+    border: 1px solid #c1e0e2;
+    border-radius: 20px;
+    padding: 1px .5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.quarto-dark .card-link:hover {
+    background-color: #454545;
+    color: #ffffff;
+}
+
+/* Dark mode navbar */
+.quarto-dark .navbar {
+  background-color: rgba(35, 35, 35, 0.92) !important;
+  color: #ffffff;
+}
+
+/* Navbar links in dark mode */
+.quarto-dark .navbar a {
+  color: #ffffff;
+}
+
+/* Dark mode: use the white logo */
+.quarto-dark .navbar-brand img {
+  content: url("images/logo-white-300ppi.png");
+}
+
 
 html {
   scroll-behavior: smooth;

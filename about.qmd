@@ -5,9 +5,14 @@ page-layout: full
 ---
 
 ::: hero-slideshow
-<img src="hero image.jpg" class="hero-slide active"/> <img src="hero image 2.jpg" class="hero-slide"/>
+<img src="images/humans nature/01 MBC team shows BSF larvae to farmers (Nov 2024).jpg" class="hero-slide active"/> 
+<img src="images/humans nature/08 Working frass into the soil, Tahiana farm (Dec 2025).jpg" class="hero-slide"/> 
+<img src="images/humans nature/10 BSF fly cage over pond (Apr 2025).jpg" class="hero-slide"/> 
+<img src="images/humans nature/11 Farmers with BSF products (Nov 2024).jpg" class="hero-slide"/> 
+<img src="images/humans nature/DSCN3267.jpg" class="hero-slide"/> 
+<img src="images/humans nature/Credit Ranjana Bhatta.jpg" class="hero-slide"/> 
+<img src="images/humans nature/Phoebe and Basanta credit Prakash Basnet.png" class="hero-slide"/> 
 :::
-
 ```{=html}
 <script>
   let slideIndex = 0;

@@ -8,6 +8,11 @@ lightbox:
   desc-position: right
   loop: true
 
+logo:
+  medium:
+    light: images/logo-full-300ppi.png
+    dark: images/logo-white-300ppi.png
+
 
 website:
   #site-url: add domain once we have it
@@ -17,14 +22,16 @@ website:
   open-graph: true #internet protocol that uses special meta tags in a webpage's HTML to control how a link looks when shared on social media and messaging apps
   
   twitter-card: true #a snippet of rich preview information that automatically appears when a website URL is shared in a post on X
+
   
   navbar:
-    background: "#f1f1f1"
     search: false
     pinned: true
     collapse: true
     logo: 'images/logo-full-300ppi.png'
     logo-alt: "Community Conservation Award logo"
+    
+    
     left:
       - href: about.qmd
         text: About Us
@@ -51,11 +58,10 @@ website:
 format:
   html:
     theme:
-      - cosmo #not sure about this one
-      - brand
+      light: cosmo
+      dark: darkly
     title-block: false
     css: styles.css
     toc: true
 
 editor: visual
-
